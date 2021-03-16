@@ -1,0 +1,29 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               'Writxt Jekyll'
+url:                 https://writxt.fun
+tagline:             'SMS Static Website Jekyll Theme'
+baseurl:             ""
+
+pagination:
+  enabled: true
+paginate_path: "blog/:num/"
+paginate: 10
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+
+# About/contact
+author:
+  name:              Bradley Taunt
+  url:               https://twitter.com/bradtaunt
+  email:             hello@uglyduck.ca

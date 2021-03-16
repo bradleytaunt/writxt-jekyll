@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #fffaf7;
+    color: #2d2d2d;
+    font: 16px/1.5 system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 42rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a,a:visited {
+    color: crimson;
+}
+a:hover, a:focus {
+    color: black;
+}
+
+hr {
+    background: lightgrey;
+    border: 0;
+    height: 1px;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin: 10px auto;
+    max-width: 100%;
+}
+img[data-type=""] {
+    display: none;
+}
+
+header {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 4rem;
+}
+header h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0;
+}
+header h2 a {
+    font-weight: 600;
+}
+header nav a {
+    margin-left: 10px;
+}
+
+article section {
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin: 1.4rem 0;
+    overflow: hidden;
+    padding: 15px 15px 45px 15px;
+    position: relative;
+}
+article section p:last-of-type {
+    margin-bottom: 0;
+}
+article section .meta {
+    background: #f9f9f9;
+    border-top: 1px dashed lightgrey;
+    bottom: 0;
+    font-size: 80%;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    width: 100%;
+}
+article section .meta a {
+    line-height: 1;
+    text-decoration: none;
+}
+article section .meta a,
+article section .meta a:visited {
+    color: grey;
+    text-decoration: none;
+}
+article section .meta a:hover,
+article section .meta a:focus {
+    color: black;
+    text-decoration: underline;
+}
+article section .meta time {
+    color: grey;
+}
+article section .meta a:hover time {
+    color: black;
+}
+
+.pagination {
+    text-align: right;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+@media(max-width:700px) {
+    body {
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width:520px) {
+    hr {
+        margin: 2rem 0;
+    }
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    header nav {
+        margin-top: 0.8rem;
+    }
+    header nav a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article>
+<section>
+    {{ content }}
+    <div class="meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%m/%d/%Y" }} @ {{ page.date | date: "%R" }}</time>
+    </div>
+</section>
+</article>

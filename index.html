@@ -1,0 +1,32 @@
+---
+layout: default
+pagination:
+  enabled: true
+title: SMS Blog Jekyll Theme
+---
+
+<article>
+{% for post in paginator.posts %}
+  <section>
+    {{ post.content }}
+    <div class="meta">
+        <a href="{{ post.url }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m/%d/%Y" }} @ {{ post.date | date: "%R" }}</time></a>
+    </div>
+  </section>
+{% endfor %}
+</article>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+    <span>&nbsp;|&nbsp;</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
