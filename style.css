@@ -39,7 +39,7 @@ img {
     margin: 10px auto;
     max-width: 100%;
 }
-img[data-type=""] {
+img[data-type=""], img[data-type="undefined"] {
     display: none;
 }
 
